@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食神秘籍：给琪琪的食谱</title>
+    <style>
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* 根据需要调整 */
+        }
+
+        .recipe-card {
+            flex: 0 0 calc(33.33% - 20px); /* 根据需要调整宽度，考虑边距 */
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        /* 根据需要添加图像、h3等的其他样式 */
+
+        @media screen and (max-aspect-ratio: 1/1) {
+            /* 1:1 长宽比或正方形窗口，切换到3x3布局 */
+            .recipe-card {
+                flex: 0 0 calc(33.33% - 20px);
+            }
+        }
+
+        @media screen and (min-aspect-ratio: 3/1) {
+            /* 更宽的窗口，切换到9x1布局 */
+            .recipe-card {
+                flex: 0 0 calc(31.11% - 20px);
+            }
+        }
+    </style>
+
+
+    <style>
+        /*背景是图片：*/
+        /*body {*/
+        /*    font-family: Arial, sans-serif;*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*    background-image: url('mainbg6.jpg');*/
+        /*    background-size: cover;*/
+        /*    background-position: center;*/
+        /*    background-repeat: no-repeat;*/
+        /*}*/
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /*background: linear-gradient(to right, #6C7B8B, #C0C0C0); !* 背景渐变色 *!*/
+            /*background: linear-gradient(to right, #AED6F1, #D0ECE7); !* 渐变色为淡蓝到淡绿 *!*/
+            /*background: linear-gradient(to right, #3498db, #2ecc71); !* 深蓝到深绿的渐变色 *!*/
+            /*background: linear-gradient(to right, #87CEEB, #98FB98); !* 浅蓝到浅绿的渐变色 *!*/
+            /*background: linear-gradient(60deg, #c5d5cd 25%, #F8E5E5 12%, #dddfd4 25% ,#c2dde6 40%);*/
+            /*background: linear-gradient(45deg, #86c7c3 10%, #a2d3b1 30%, #d4d6ab 50%, #f2c0b6 70%);*/
+            /*background: linear-gradient(75deg, #F8E5E5 10%, #c5d5cd 30%, #c2dde6 50%, #dddfd4 70%)*/
+            background: #bdc3c7
+            /*background: #ecf0f1*/
+
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            float: right;
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: background-color 0.4s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .recipe-card {
+            width: 200px;
+            margin: 15px;
+            border: 0px solid #ddd;
+            border-radius: 14px;
+            overflow: hidden;
+            transition: transform 0.4s ease;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.07);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 10px 10px; /* 底部两个角为圆角 */
+        }
+
+        .recipe-card h3 {
+            margin-top: 10px; /* 顶部边距 */
+            font-size: 1.5em; /* 字体大小 */
+            text-align: center; /* 文字居中 */
+            /*color: #15156; !* 文字颜色 *!*/
+            /*color: #5A7670; !* 文字颜色 *!*/
+            /*color: #B89F5D; !* 文字颜色 *!*/
+            /*color: #3fb0ac; !* 文字颜色 *!*/
+            color: #1a2a3a; /* 文字颜色 */
+        }
+
+
+        .recipe-card:hover h3 {
+            color: #B89F5D; /* 鼠标悬停时文字颜色 */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* 新增样式 */
+        .about-tooltip {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>食神秘籍：给琪琪的食谱</h1>
+</header>
+
+<nav>
+    <!-- 关于按钮链接到about.html页面 -->
+    <a href="#" id="aboutButton">关于</a>
+</nav>
+
+<section>
+    <div class="recipe-card" onclick="window.location.href='recipe1.html'">
+        <img src="recipe1.jpg" alt="山药养胃粥">
+        <h3>山药红枣小米粥</h3>
+    </div>
+
+    <!-- 重复以下块以添加更多菜谱 -->
+    <div class="recipe-card" onclick="window.location.href='recipe2.html'">
+        <img src="recipe2.jpg" alt="荠菜鸡蛋粥">
+        <h3>荠菜鸡蛋粥</h3>
+    </div>
+
+    <div class="recipe-card" onclick="window.location.href='recipe3.html'">
+        <img src="recipe3.jpg" alt="红糖生姜炖苹果">
+        <h3>红糖生姜炖苹果</h3>
+    </div>
+
+    <div class="recipe-card" onclick="window.location.href='recipe4.html'">
+        <img src="recipe4.jpg" alt="五香糖醋排骨">
+        <h3>五香糖醋排骨</h3>
+    </div>
+
+    <div class="recipe-card" onclick="window.location.href='recipe5.html'">
+        <img src="recipe5.jpg" alt="蚝油生菜包">
+        <h3>蚝油生菜包</h3>
+    </div>
+
+    <div class="recipe-card" onclick="window.location.href='recipe6.html'">
+        <img src="recipe6.jpg" alt="豆腐鱼香茄子">
+        <h3>豆腐鱼香茄子</h3>
+    </div>
+
+    <div class="recipe-card" onclick="window.location.href='recipe7.html'">
+        <img src="recipe7.jpg" alt="椒盐脆皮鸡翅">
+        <h3>椒盐脆皮鸡翅</h3>
+    </div>
+
+    <div class="recipe-card" onclick="window.location.href='recipe8.html'">
+        <img src="recipe8.jpg" alt="香煎鲈鱼">
+        <h3>香煎鲈鱼</h3>
+    </div>
+
+    <div class="recipe-card" onclick="window.location.href='recipe9.html'">
+        <img src="recipe9.jpg" alt="醋溜白菜">
+        <h3>醋溜白菜</h3>
+    </div>
+
+    <div class="recipe-card" onclick="window.location.href='recipe10.html'">
+        <img src="recipe10.jpg" alt="紫薯糯米糍">
+        <h3>紫薯糯米糍</h3>
+    </div>
+
+
+
+
+
+    <!-- 添加更多菜谱卡片 -->
+</section>
+
+<footer>
+    &copy; 2024 小邓（让我康康是谁不好好吃饭）
+</footer>
+
+<!-- 新增提示框 -->
+<div class="about-tooltip" id="aboutTooltip">又不是什么商业网站，并没有关于信息哈哈哈</div>
+
+<script>
+    var aboutButton = document.getElementById('aboutButton');
+    var aboutTooltip = document.getElementById('aboutTooltip');
+    var clickCount = 0;
+
+    aboutButton.addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止默认行为，即阻止跳转
+
+        clickCount++;
+
+        if (clickCount === 1) {
+            // 显示提示框，并在2秒后隐藏
+            aboutTooltip.innerHTML = '哦？你想看网站协议条款什么的吗？可惜了，我这又不是什么商业网站';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+        } else if (clickCount === 2) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '第二次点击了，注意哦';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+        }  else if (clickCount === 3) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '开发者：小邓';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+        }  else if (clickCount === 4) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '好吧，严谨一点。       开发者：爱你的小邓(*^▽^*)';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+        }  else if (clickCount === 5) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '你有本事再点一下！';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+        }  else if (clickCount === 6) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '真没有什么内容了，别点了，乖~';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+        }  else if (clickCount === 7) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '行吧，你真无聊';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+
+        }   else if (clickCount === 8) {
+            // 点击8次后跳转到about.html
+            window.location.href = 'about.html';
+        }
+    });
+    function navigateToRecipe(recipeId) {
+        // 根据菜谱ID执行相应的跳转逻辑
+        window.location.href = 'recipe.html?id=' + recipeId;
+    }
+
+    function showAndHideTooltip() {
+        aboutTooltip.style.opacity = 1;
+        setTimeout(function () {
+            aboutTooltip.style.opacity = 0;
+        }, 2000);
+    }
+
+
+</script>
+
+</body>
+
+</html>

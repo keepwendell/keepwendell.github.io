@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五香糖醋排骨</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(60deg, #F8E5E5 10%, #c5d5cd 30%, #c2dde6 50%, #dddfd4 70%);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center; /* 居中对齐 */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* 返回主页按钮样式 */
+        .back-to-home {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* 开始计时按钮样式 */
+        .start-timer-btn {
+            position: fixed;
+            bottom: 120px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* 停止计时按钮样式 */
+        .stop-timer-btn {
+            position: fixed;
+            bottom: 190px;
+            right: 20px;
+            display: none;
+            padding: 10px 20px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* 计时器样式 */
+        #timer {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>五香糖醋排骨</h1>
+</header>
+
+<section>
+    <img src="recipe4.jpg" alt="山药粥" />
+
+    <!-- 食材准备表格 -->
+    <table>
+        <thead>
+        <tr>
+            <th>食材</th>
+            <th>克数</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>排骨</td>
+            <td>500克</td>
+        </tr>
+        <tr>
+            <td>生姜（切片）</td>
+            <td>3片</td>
+        </tr>
+        <tr>
+            <td>大葱（切段）</td>
+            <td>1根</td>
+        </tr>
+        <tr>
+            <td>料酒</td>
+            <td>2勺</td>
+        </tr>
+        <tr>
+            <td>酱油</td>
+            <td>3勺</td>
+        </tr>
+        <tr>
+            <td>白糖</td>
+            <td>3勺</td>
+        </tr>
+        <tr>
+            <td>陈醋</td>
+            <td>2勺</td>
+        </tr>
+        <tr>
+            <td>五香粉</td>
+            <td>1勺</td>
+        </tr>
+        <tr>
+            <td>食用油</td>
+            <td>适量</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- 烹饪步骤 -->
+    <h2>烹饪步骤</h2>
+    <ol>
+        <li>排骨用水焯水，去除血水，捞出备用。</li>
+        <li>锅中加入适量食用油，加入姜片和大葱段爆炒出香味。</li>
+        <li>加入焯水后的排骨，翻炒至表面微黄。</li>
+        <li>加入料酒、酱油、白糖、陈醋，搅拌均匀。</li>
+        <li>加入足够的清水，放入五香粉，煮沸后转小火炖煮40分钟至汤汁粘稠。</li>
+        <li>最后收汁，确保排骨均匀裹上糖醋汁即可。</li>
+    </ol>
+
+    <h2>备注</h2>
+    <ul>
+        <li>这道五香糖醋排骨酸甜可口，适合作为下饭菜品。</li>
+        <li>食用时可撒上一些芝麻提味。</li>
+    </ul>
+
+    <h2>参考链接</h2>
+    <ul>
+        <li><a href="https://www.xinshipu.com/zuofa/83510" target="_blank">【图文传送门】五香排骨的做法</a></li>
+        <li><a href="https://www.bilibili.com/video/BV1SM411C7uX" target="_blank">【视频传送门1】过年了，教你正宗的糖醋排骨，鲜嫩入味好吃，学会年夜饭在家露一手</a></li>
+        <li><a href="https://haokan.baidu.com/v?pd=wisenatural&vid=2675153589821215645" target="_blank">【视频传送门2】糖醋排骨简单又好吃的2种做法，教你糖和醋的黄金比例，软烂脱骨</a></li>
+
+    </ul>
+
+    &nbsp; <!--   -->
+    &nbsp; <!--   -->
+    </p>
+</section>
+
+<!-- 返回主页按钮 -->
+<a href="index.html" class="back-to-home">返回主页</a>
+
+<!-- 开始计时按钮 -->
+<div class="start-timer-btn" onclick="startTimer()">开始计时</div>
+
+<!-- 停止计时按钮 -->
+<div class="stop-timer-btn" onclick="stopTimer()">停止计时</div>
+
+<!-- 计时器 -->
+<div id="timer">00:00:00</div>
+
+<footer>
+    &copy; 2024 小邓（让我康康是谁不好好吃饭）
+</footer>
+
+<script>
+    var timerInterval;
+    var timerRunning = false;
+    var seconds = 0;
+
+    function startTimer() {
+        var startBtn = document.querySelector('.start-timer-btn');
+        var stopBtn = document.querySelector('.stop-timer-btn');
+        var timerElement = document.getElementById('timer');
+
+        if (!timerRunning) {
+            startBtn.style.display = 'none';
+            stopBtn.style.display = 'inline-block';
+            timerElement.style.display = 'block';
+            timerRunning = true;
+
+            timerInterval = setInterval(function () {
+                seconds++;
+                var hours = Math.floor(seconds / 3600);
+                var minutes = Math.floor((seconds % 3600) / 60);
+                var displaySeconds = seconds % 60;
+                timerElement.innerText = formatTime(hours) + ':' + formatTime(minutes) + ':' + formatTime(displaySeconds);
+
+            }, 1000);
+        }
+    }
+
+    function stopTimer() {
+        var startBtn = document.querySelector('.start-timer-btn');
+        var stopBtn = document.querySelector('.stop-timer-btn');
+        var timerElement = document.getElementById('timer');
+
+        clearInterval(timerInterval);
+        timerRunning = false;
+        startBtn.style.display = 'inline-block';
+        stopBtn.style.display = 'none';
+        timerElement.style.display = 'none';
+        timerElement.innerText = '00:00:00';
+
+        // 随机文本功能
+        if (seconds >= 6) {
+            var randomTexts = [
+                '老婆用我计时了(＾－＾)V，真棒！',
+                '计时结束，辛苦了！',
+                '用心计时，幸福满满！',
+                '饭还差多久哦？饿饿',
+                '时间过得好快啊！',
+                '背着我做什么好吃的呢',
+                '这顿饭没多少热量，也就胖五斤吧',
+                '时间如梦，珍惜当下。',
+                '爱你在心口难开~',
+                '你的微笑是我每天的阳光',
+                '亲爱滴，我爱你',
+                '想你的时候，心情都会变得温柔',
+                '你的笑容是我心中最美的风景',
+                '爱你不仅仅是因为你的样子，还因为你的内在',
+                '厉害哦老婆，这么香的饭都被你做出来了',
+                '不好好吃饭打你屁股哈',
+                '限你看到这句话三十秒内给我一个亲亲',
+                '这谁家的花姑娘，还怪会做饭的哩',
+                '老婆啵一个┗|｀O′|┛ 嗷~~',
+                '干饭人干饭魂，冲呀！',
+                '做完饭记得关闭煤气开关哈'
+            ];
+
+            var randomIndex = Math.floor(Math.random() * randomTexts.length);
+
+            // 显示随机文本
+            var completionText = document.createElement('div');
+            completionText.innerText = randomTexts[randomIndex];
+            completionText.style.position = 'fixed';
+            completionText.style.left = '50%';
+            completionText.style.top = '50%';
+            completionText.style.transform = 'translate(-50%, -50%)';
+            completionText.style.fontSize = '18px';
+            completionText.style.color = '#333';
+            completionText.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+            completionText.style.padding = '15px';
+            completionText.style.borderRadius = '5px';
+            document.body.appendChild(completionText);
+
+            // 2秒后移除文本
+            setTimeout(function () {
+                document.body.removeChild(completionText);
+            }, 2000);
+        }
+
+        // 在停止计时时将秒数重置为零
+        seconds = 0;
+    }
+
+    function formatTime(time) {
+        return time < 10 ? '0' + time : time;
+    }
+</script>
+</body>
+
+</html>
