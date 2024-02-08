@@ -303,7 +303,7 @@
                 aboutTooltip.style.opacity = 0;
             }, 2500);
 
-         }  else if (clickCount === 9) {
+        }  else if (clickCount === 9) {
             // 提示另一个内容
             aboutTooltip.innerHTML = '放弃吧，一直这样点击不会累吗';
             aboutTooltip.style.opacity = 1;
@@ -311,14 +311,32 @@
                 aboutTooltip.style.opacity = 0;
             }, 2000);
 
-         }  else if (clickCount === 10) {
+        }  else if (clickCount === 10) {
             // 提示另一个内容
             aboutTooltip.innerHTML = '您已连续点击10次，程序自毁中...';
             aboutTooltip.style.opacity = 1;
             setTimeout(function () {
                 aboutTooltip.style.opacity = 0;
             }, 2000);
-        }   else if (clickCount === 20) {
+
+        }  else if (clickCount === 15) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '程序自毁进度：80%...';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+
+        }  else if (clickCount === 25) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '程序自毁进度：99%...';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+
+
+        }   else if (clickCount === 66) {
             // 点击20次后跳转到about.html
             window.location.href = 'about.html';
         }
