@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>椒盐脆皮鸡翅</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center; /* 居中对齐 */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* 返回主页按钮样式 */
+        .back-to-home {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* 开始计时按钮样式 */
+        .start-timer-btn {
+            position: fixed;
+            bottom: 120px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* 停止计时按钮样式 */
+        .stop-timer-btn {
+            position: fixed;
+            bottom: 190px;
+            right: 20px;
+            display: none;
+            padding: 10px 20px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* 计时器样式 */
+        #timer {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>椒盐脆皮鸡翅</h1>
+</header>
+
+<section>
+    <img src="recipe7.jpg" alt="椒盐脆皮鸡翅" />
+
+    <!-- 食材准备表格 -->
+    <!-- 食材准备表格 -->
+    <table>
+        <thead>
+        <tr>
+            <th>食材</th>
+            <th>克数</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>鸡翅中</td>
+            <td>500克</td>
+        </tr>
+        <tr>
+            <td>淀粉</td>
+            <td>适量</td>
+        </tr>
+        <tr>
+            <td>盐</td>
+            <td>适量</td>
+        </tr>
+        <tr>
+            <td>黑胡椒粉</td>
+            <td>适量</td>
+        </tr>
+        <tr>
+            <td>五香粉</td>
+            <td>1勺</td>
+        </tr>
+        <tr>
+            <td>大蒜（切末）</td>
+            <td>3瓣</td>
+        </tr>
+        <tr>
+            <td>红辣椒（切圈）</td>
+            <td>1个</td>
+        </tr>
+        <tr>
+            <td>食用油</td>
+            <td>适量</td>
+        </tr>
+        <tr>
+            <td>香菜（切碎）</td>
+            <td>适量</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- 烹饪步骤 -->
+    <h2>烹饪步骤</h2>
+    <ol>
+        <li>鸡翅中洗净沥干水分，用淀粉搅拌均匀裹上一层薄薄的粉。</li>
+        <li>烧热食用油，将鸡翅中放入炸至金黄酥脆，捞出沥干油。</li>
+        <li>锅中留底油，放入蒜末、红辣椒圈炸香。</li>
+        <li>将炸好的鸡翅中放入锅中，快速翻炒均匀。</li>
+        <li>撒上盐、黑胡椒粉、五香粉，继续翻炒均匀。</li>
+        <li>最后撒上香菜碎，出锅即可。</li>
+    </ol>
+
+    <!-- 备注 -->
+    <h2>备注</h2>
+    <ul>
+        <li>这道椒盐脆皮鸡翅外酥内嫩，香辣可口，适合作为下酒菜或零食。</li>
+        <li>食用时可搭配一些柠檬汁，更加开胃。</li>
+    </ul>
+
+    <!-- 参考链接 -->
+    <h2>参考链接</h2>
+    <ul>
+        <li><a href="https://www.xiachufang.com/recipe/106949317/" target="_blank">【图文传送门】巨巨巨好吃的椒盐鸡翅～酥脆多汁</a></li>
+        <li><a href="https://www.bilibili.com/video/BV1D84y1o7sj" target="_blank">【视频传送门1】椒盐脆皮鸡翅 🔥外焦里嫩又多汁～鸡翅最好吃做法</a></li>
+        <li><a href="https://haokan.baidu.com/v?pd=wisenatural&vid=6014255036694276303" target="_blank">【视频传送门2】年夜饭大硬菜椒盐鸡翅，总厨分享不外传的做法，皮脆肉嫩，真好吃</a></li>
+    </ul>
+
+
+
+    &nbsp; <!--   -->
+    &nbsp; <!--   -->
+    </p>
+</section>
+
+<!-- 返回主页按钮 -->
+<a href="index.html" class="back-to-home">返回主页</a>
+
+<!-- 开始计时按钮 -->
+<div class="start-timer-btn" onclick="startTimer()">开始计时</div>
+
+<!-- 停止计时按钮 -->
+<div class="stop-timer-btn" onclick="stopTimer()">停止计时</div>
+
+<!-- 计时器 -->
+<div id="timer">00:00:00</div>
+
+<footer>
+    &copy; 2024 小邓（让我康康是谁不好好吃饭）
+</footer>
+
+<script>
+    var timerInterval;
+    var timerRunning = false;
+    var seconds = 0; // 将 seconds 声明为全局变量
+
+    function startTimer() {
+        var startBtn = document.querySelector('.start-timer-btn');
+        var stopBtn = document.querySelector('.stop-timer-btn');
+        var timerElement = document.getElementById('timer');
+
+        startBtn.style.display = 'none';
+        stopBtn.style.display = 'inline-block';
+        timerElement.style.display = 'block';
+        timerRunning = true;
+
+        timerInterval = setInterval(function () {
+            seconds++;
+            var hours = Math.floor(seconds / 3600);
+            var minutes = Math.floor((seconds % 3600) / 60);
+            var displaySeconds = seconds % 60;
+            timerElement.innerText = formatTime(hours) + ':' + formatTime(minutes) + ':' + formatTime(displaySeconds);
+        }, 1000);
+    }
+
+    function stopTimer() {
+        var startBtn = document.querySelector('.start-timer-btn');
+        var stopBtn = document.querySelector('.stop-timer-btn');
+        var timerElement = document.getElementById('timer');
+
+        clearInterval(timerInterval);
+        timerRunning = false;
+        startBtn.style.display = 'inline-block';
+        stopBtn.style.display = 'none';
+        timerElement.style.display = 'none';
+        timerElement.innerText = '00:00:00';
+
+        // Check if seconds is greater than or equal to 6
+        if (seconds >= 6) {
+            var randomTexts = [
+                '老婆用我计时了，真棒！',
+                '计时结束，辛苦了！',
+                '用心计时，幸福满满！',
+                '饭还差多久哦？饿饿',
+                '时间过得好快啊！',
+                '背着我做什么好吃的呢',
+                '这顿饭没多少热量，也就胖五斤吧',
+                '时间如梦，珍惜当下。',
+                '爱你在心口难开~',
+                '你的微笑是我每天的阳光',
+                '亲爱滴，我爱你',
+                '想你的时候，心情都会变得温柔',
+                '你的笑容是我心中最美的风景',
+                '爱你不仅仅是因为你的样子，还因为你的内在',
+                '厉害哦老婆，这么香的饭都被你做出来了',
+                '不好好吃饭打你屁股哈',
+                '限你看到这句话三十秒内给我一个亲亲',
+                '这谁家的花姑娘，还怪会做饭的哩'
+            ];
+
+            var randomIndex = Math.floor(Math.random() * randomTexts.length);
+
+            // Display text
+            var completionText = document.createElement('div');
+            completionText.innerText = randomTexts[randomIndex];
+            completionText.style.position = 'fixed';
+            completionText.style.left = '50%';
+            completionText.style.top = '50%';
+            completionText.style.transform = 'translate(-50%, -50%)';
+            completionText.style.fontSize = '18px';
+            completionText.style.color = '#333';
+            completionText.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+            completionText.style.padding = '15px';
+            completionText.style.borderRadius = '5px';
+            document.body.appendChild(completionText);
+
+            // Remove text after 2 seconds
+            setTimeout(function () {
+                document.body.removeChild(completionText);
+            }, 2000);
+        }
+    }
+
+    function formatTime(time) {
+        return time < 10 ? '0' + time : time;
+    }
+</script>
+</body>
+
+</html>

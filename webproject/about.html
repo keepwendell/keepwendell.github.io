@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('about_bg1.jpg'); /* 替换为实际的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: justify;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.95); /* 提高透明度 */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* 返回主页按钮样式 */
+        .back-to-home {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* 彩蛋图标样式 */
+        .easter-egg-btn {
+            position: fixed;
+            bottom: 50px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background-image: url('easter_egg_icon.png'); /* 替换为实际图标路径 */
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        /* 小彩蛋内容样式 */
+        .easter-egg-content {
+            display: none;
+            margin-top: 20px;
+            border-top: 2px solid #333;
+            padding-top: 20px;
+            animation: slideInAndBlink 8s ease-out; /* 应用两个动画 */
+            text-align: center; /* 居中文本 */
+        }
+
+        .easter-egg-section {
+            padding: 20px;
+            text-align: justify;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* 背景色透明度 */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 2em; /* 增大字体大小 */
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.6em; /* 增大字体大小 */
+            color: #555;
+        }
+
+        /* 额外的图片样式 */
+        #extraImage {
+            display: none;
+            max-width: 50%;
+            height: auto;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+            animation: rainbowEffect 33s; /* 彩虹光线动画，持续10秒 */
+        }
+
+        /* 添加动画效果 */
+        @keyframes slideInAndBlink {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+        }
+
+        /* 彩虹光线动画效果 */
+        @keyframes rainbowEffect {
+            0% {
+                box-shadow: 0 0 50px rgba(255, 0, 0, 0.8);
+            }
+            25% {
+                box-shadow: 0 0 50px rgba(255, 255, 0, 0.8); /* 设置为黄色的阴影 */
+            }
+            50% {
+                box-shadow: 0 0 50px rgba(0, 255, 0, 0.8); /* 设置为绿色的阴影 */
+            }
+            75% {
+                box-shadow: 0 0 50px rgba(0, 0, 255, 0.8); /* 设置为蓝色的阴影 */
+            }
+            100% {
+                box-shadow: 0 0 50px rgba(255, 0, 0, 0.8);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>关于</h1>
+</header>
+
+<section>
+    <p>亲爱的琪琪：</p>
+
+    <p>新年好！希望你在新的一年里吃好喝好，身体倍儿棒，心情特别好。睡眠多多、钱包多多，开心多多，事事顺心！ 最近我为你汇集整理了一系列对胃有帮助的食谱，希望它们能成为你餐桌上的美味之选，为你的身体健康助力。写这个网页确实费了老大劲，希望你能看在这老鼻子劲儿上，好好品味这些美味佳肴，为自己的健康着想。</p>
+    <p>愿你在新的一年里事业腾飞，生活更上一层楼。期待我们共同分享更多美好时光。</p>
+    <p>落款：小邓 <br>日期：2024年2月10日</p>
+</section>
+
+<!-- 返回主页按钮 -->
+<a href="index.html" class="back-to-home">返回主页</a>
+
+<!-- 彩蛋按钮 -->
+<div class="easter-egg-btn" onclick="handleEasterEggClick()"></div>
+
+<!-- 小彩蛋内容 -->
+<div class="easter-egg-content" id="easterEggContent">
+    <div class="easter-egg-section">
+        <h2>重要纪念日</h2>
+        <p>从认识到现在已经 <span id="daysSinceMeeting"></span> 天</p>
+        <p>从表白到现在已经 <span id="daysSinceBe2"></span> 天</p>
+        <p>距离变成老邓还有 <span id="daysSinceBe35"></span> 天</p>
+        <!-- 添加更多列表项 -->
+    </div>
+</div>
+
+<!-- 额外的图片 -->
+<img src="extra_image.jpg" id="extraImage" alt="额外的图片">
+&nbsp; <!--   -->
+&nbsp; <!--   -->
+
+<footer>
+    &copy; 2024 养胃食谱
+</footer>
+
+<script>
+    var easterEggClickCount = 0;
+
+    function handleEasterEggClick() {
+        easterEggClickCount++;
+
+        // 在第8次点击时显示额外的图片
+        if (easterEggClickCount === 2 + 6) {
+            showExtraImage();
+        } else if (easterEggClickCount === 2) {
+            showEasterEggContent();
+        }
+    }
+
+    function showEasterEggContent() {
+        var easterEggContent = document.getElementById("easterEggContent");
+        easterEggContent.style.display = "block";
+
+        // 获取纪念日的日期
+        var meetingDate = new Date("2023-02-16"); // 请将 "认识的日期" 替换为实际日期
+        var be2Date = new Date("2023-06-09"); // 请将 "表白的日期" 替换为实际日期
+        var be35Date = new Date("2033-06-13"); // 请将 "变成老邓的日期" 替换为实际日期
+
+        // 计算天数差值
+        var daysSinceMeeting = Math.floor((new Date() - meetingDate) / (1000 * 60 * 60 * 24));
+        var daysSinceBe2 = Math.floor((new Date() - be2Date) / (1000 * 60 * 60 * 24));
+        var daysSinceBe35 = Math.floor(( be35Date - new Date()) / (1000 * 60 * 60 * 24));
+
+        // 更新页面上的天数显示
+        document.getElementById('daysSinceMeeting').innerText = daysSinceMeeting;
+        document.getElementById('daysSinceBe2').innerText = daysSinceBe2;
+        document.getElementById('daysSinceBe35').innerText = daysSinceBe35;
+    }
+
+    function showExtraImage() {
+        var extraImageContainer = document.getElementById('extraImage');
+        extraImageContainer.style.display = 'block';
+    }
+</script>
+</body>
+
+</html>

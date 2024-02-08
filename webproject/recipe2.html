@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>荠菜鸡蛋粥</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center; /* 居中对齐 */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* 返回主页按钮样式 */
+        .back-to-home {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* 开始计时按钮样式 */
+        .start-timer-btn {
+            position: fixed;
+            bottom: 120px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* 停止计时按钮样式 */
+        .stop-timer-btn {
+            position: fixed;
+            bottom: 190px;
+            right: 20px;
+            display: none;
+            padding: 10px 20px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* 计时器样式 */
+        #timer {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>荠菜蛋粥</h1>
+</header>
+
+<section>
+    <img src="recipe1.jpg" alt="山药粥" />
+
+    <!-- 食材准备表格 -->
+    <table>
+        <thead>
+        <tr>
+            <th>食材</th>
+            <th>克数</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>大米</td>
+            <td>100克</td>
+        </tr>
+        <tr>
+            <td>荠菜</td>
+            <td>适量</td>
+        </tr>
+        <tr>
+            <td>鸡蛋</td>
+            <td>2个</td>
+        </tr>
+        <tr>
+            <td>盐</td>
+            <td>适量</td>
+        </tr>
+        <tr>
+            <td>姜末</td>
+            <td>适量</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- 烹饪步骤 -->
+    <h2>烹饪步骤</h2>
+    <ol>
+        <li>步骤1：大米淘洗干净，荠菜洗净备用。</li>
+        <li>步骤2：将大米加水放入电饭煲，按煮粥功能启动。</li>
+        <li>步骤3：等粥煮至八分熟时，加入荠菜丝，搅拌均匀。</li>
+        <li>步骤4：打入鸡蛋，搅拌均匀，加入适量盐和姜末，继续煮至熟烂即可。</li>
+    </ol>
+
+    <h2>备注</h2>
+    <ul>
+        <li>这款荠菜蛋粥清淡可口，适合脾胃不佳、食欲不振时食用。</li>
+        <li>食用时据说可加入少量生姜提味。</li>
+    </ul>
+
+    <h2>参考链接</h2>
+    <ul>
+        <li><a href="https://baijiahao.baidu.com/s?id=1620626793128478100&wfr=spider&for=pc" target="_blank">【图文传送门】寒冷的冬日里，一碗简单的鸡蛋芥菜粥，也可以暖暖你的胃</a></li>
+        <li><a href="https://www.bilibili.com/video/BV17Y411u7e6" target="_blank">【视频传送门1】芥菜烧骨粥，广东十大名粥之一，粥细滑绵绸，暖胃又下火</a></li>
+        <li><a href="https://www.bilibili.com/video/BV1cj411g7ga" target="_blank">【视频传送门2】荠菜粥 这也太清香了吧！还没安排的别忘了哟！</a></li>
+
+    </ul>
+
+    &nbsp; <!--   -->
+    &nbsp; <!--   -->
+    </p>
+</section>
+
+<!-- 返回主页按钮 -->
+<a href="index.html" class="back-to-home">返回主页</a>
+
+<!-- 开始计时按钮 -->
+<div class="start-timer-btn" onclick="startTimer()">开始计时</div>
+
+<!-- 停止计时按钮 -->
+<div class="stop-timer-btn" onclick="stopTimer()">停止计时</div>
+
+<!-- 计时器 -->
+<div id="timer">00:00:00</div>
+
+<footer>
+    &copy; 2024 小邓（让我康康是谁不好好吃饭）
+</footer>
+
+<script>
+    var timerInterval;
+    var timerRunning = false;
+    var seconds = 0; // 将 seconds 声明为全局变量
+
+    function startTimer() {
+        var startBtn = document.querySelector('.start-timer-btn');
+        var stopBtn = document.querySelector('.stop-timer-btn');
+        var timerElement = document.getElementById('timer');
+
+        startBtn.style.display = 'none';
+        stopBtn.style.display = 'inline-block';
+        timerElement.style.display = 'block';
+        timerRunning = true;
+
+        timerInterval = setInterval(function () {
+            seconds++;
+            var hours = Math.floor(seconds / 3600);
+            var minutes = Math.floor((seconds % 3600) / 60);
+            var displaySeconds = seconds % 60;
+            timerElement.innerText = formatTime(hours) + ':' + formatTime(minutes) + ':' + formatTime(displaySeconds);
+        }, 1000);
+    }
+
+    function stopTimer() {
+        var startBtn = document.querySelector('.start-timer-btn');
+        var stopBtn = document.querySelector('.stop-timer-btn');
+        var timerElement = document.getElementById('timer');
+
+        clearInterval(timerInterval);
+        timerRunning = false;
+        startBtn.style.display = 'inline-block';
+        stopBtn.style.display = 'none';
+        timerElement.style.display = 'none';
+        timerElement.innerText = '00:00:00';
+
+        // Check if seconds is greater than or equal to 6
+        if (seconds >= 6) {
+            var randomTexts = [
+                '老婆用我计时了，真棒！',
+                '计时结束，辛苦了！',
+                '用心计时，幸福满满！',
+                '饭还差多久哦？饿饿',
+                '时间过得好快啊！',
+                '背着我做什么好吃的呢',
+                '这顿饭没多少热量，也就胖五斤吧',
+                '时间如梦，珍惜当下。',
+                '爱你在心口难开~',
+                '你的微笑是我每天的阳光',
+                '亲爱滴，我爱你',
+                '想你的时候，心情都会变得温柔',
+                '你的笑容是我心中最美的风景',
+                '爱你不仅仅是因为你的样子，还因为你的内在',
+                '厉害哦老婆，这么香的饭都被你做出来了',
+                '不好好吃饭打你屁股哈',
+                '限你看到这句话三十秒内给我一个亲亲',
+                '这谁家的花姑娘，还怪会做饭的哩'
+            ];
+
+            var randomIndex = Math.floor(Math.random() * randomTexts.length);
+
+            // Display text
+            var completionText = document.createElement('div');
+            completionText.innerText = randomTexts[randomIndex];
+            completionText.style.position = 'fixed';
+            completionText.style.left = '50%';
+            completionText.style.top = '50%';
+            completionText.style.transform = 'translate(-50%, -50%)';
+            completionText.style.fontSize = '18px';
+            completionText.style.color = '#333';
+            completionText.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+            completionText.style.padding = '15px';
+            completionText.style.borderRadius = '5px';
+            document.body.appendChild(completionText);
+
+            // Remove text after 2 seconds
+            setTimeout(function () {
+                document.body.removeChild(completionText);
+            }, 2000);
+        }
+    }
+
+    function formatTime(time) {
+        return time < 10 ? '0' + time : time;
+    }
+</script>
+</body>
+
+</html>
