@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐认知锻炼</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        input {
+            font-size: 1em;
+            padding: 5px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 8px 16px;
+            cursor: pointer;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #generatedNumbers {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+
+        #generatedNumbers p {
+            margin: 10px 0;
+        }
+
+        .generated-number {
+            display: inline-block;
+            font-size: 1.5em;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid #4caf50;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+        }
+
+        .action-buttons button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>音乐认知锻炼</h1>
+
+    <div class="container">
+        <label for="num_count">选择简谱个数：</label>
+        <input type="number" id="num_count" min="1" max="10">
+        <button onclick="generateNumbers()">生成简谱</button>
+    </div>
+
+    <div id="generatedNumbers"></div>
+
+    <div class="action-buttons">
+        <button onclick="showSolfeggioNames()">查看唱名</button>
+        <button onclick="showEnglishNames()">查看英文</button>
+    </div>
+
+    <script>
+        function generateNumbers() {
+            const numCount = document.getElementById('num_count').value;
+            const generatedNumbersDiv = document.getElementById('generatedNumbers');
+            const generatedNumbers = [];
+
+            for (let i = 0; i < numCount; i++) {
+                const number = Math.floor(Math.random() * 7) + 1;
+                generatedNumbers.push(number);
+            }
+
+            generatedNumbersDiv.innerHTML = `<p>生成的简谱数字：</p>`;
+            generatedNumbers.forEach(number => {
+                const numberDiv = document.createElement('div');
+                numberDiv.classList.add('generated-number');
+                numberDiv.textContent = number;
+                generatedNumbersDiv.appendChild(numberDiv);
+            });
+
+            return generatedNumbers;
+        }
+
+        function showSolfeggioNames() {
+            const generatedNumbers = generateNumbers();
+            const solfeggioNames = generatedNumbers.map(number_to_solfeggio);
+            alert(`唱名：${solfeggioNames.join(', ')}`);
+        }
+
+        function showEnglishNames() {
+            const generatedNumbers = generateNumbers();
+            const englishNames = generatedNumbers.map(number_to_english);
+            alert(`英文：${englishNames.join(', ')}`);
+        }
+
+        function number_to_solfeggio(number) {
+            const solfeggioNames = ['do', 're', 'mi', 'fa', 'sol', 'la', 'ti'];
+            return solfeggioNames[number - 1];
+        }
+
+        function number_to_english(number) {
+            const englishNames = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
+            return englishNames[number - 1];
+        }
+    </script>
+</body>
+</html>
