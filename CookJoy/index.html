@@ -295,9 +295,31 @@
             setTimeout(function () {
                 aboutTooltip.style.opacity = 0;
             }, 2000);
+        }  else if (clickCount === 8) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '冷知识：这次所有的网页共计4000多行代码吧，是我写过的最多行代码的程序了';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2500);
 
-        }   else if (clickCount === 8) {
-            // 点击8次后跳转到about.html
+         }  else if (clickCount === 9) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '放弃吧，一直这样点击不会累吗';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+
+         }  else if (clickCount === 10) {
+            // 提示另一个内容
+            aboutTooltip.innerHTML = '您已连续点击10次，程序自毁中...';
+            aboutTooltip.style.opacity = 1;
+            setTimeout(function () {
+                aboutTooltip.style.opacity = 0;
+            }, 2000);
+        }   else if (clickCount === 20) {
+            // 点击20次后跳转到about.html
             window.location.href = 'about.html';
         }
     });
